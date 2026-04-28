@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app:*)",
+      "Bash(npm run build:*)",
+      "Bash(npx eslint:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git branch:*)",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)",
+      "Bash(npx tsc *)",
+      "Bash(cp \"E:/coding/proyectos-personales/activos/portfolio-edwin-bayona/assets/gif-pawart.gif\" \"E:/coding/proyectos-personales/activos/nexus-digital/public/\")",
+      "Bash(cp \"E:/coding/proyectos-personales/activos/portfolio-edwin-bayona/assets/gif-promogimmicks.gif\" \"E:/coding/proyectos-personales/activos/nexus-digital/public/\")",
+      "Bash(cp \"E:/coding/proyectos-personales/activos/portfolio-edwin-bayona/assets/gif-ksp.gif\" \"E:/coding/proyectos-personales/activos/nexus-digital/public/\")",
+      "Bash(cp \"E:/coding/proyectos-personales/activos/portfolio-edwin-bayona/assets/gif-elfogon.gif\" \"E:/coding/proyectos-personales/activos/nexus-digital/public/\")",
+      "Bash(cp \"E:/coding/proyectos-personales/activos/portfolio-edwin-bayona/assets/gif-parasoles.gif\" \"E:/coding/proyectos-personales/activos/nexus-digital/public/\")"
+    ]
+  }
+}
