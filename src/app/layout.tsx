@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
+import OrganizationSchema from "@/components/schema/OrganizationSchema";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${robotoMono.variable} font-display text-white antialiased overflow-x-hidden`}
       >
+        <OrganizationSchema />
         {children}
       </body>
     </html>
