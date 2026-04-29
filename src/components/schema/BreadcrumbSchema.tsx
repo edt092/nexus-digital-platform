@@ -29,20 +29,16 @@ export default function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
   );
 }
 
-// Pre-built breadcrumb configs for each route
 export const homeBreadcrumb: BreadcrumbItem[] = [
   { name: "Inicio", url: "https://nexusdigital.tech" },
 ];
 
-export const casosBreadcrumb: BreadcrumbItem[] = [
+export const privacidadBreadcrumb: BreadcrumbItem[] = [
   { name: "Inicio", url: "https://nexusdigital.tech" },
-  { name: "Casos de Éxito", url: "https://nexusdigital.tech/casos" },
+  { name: "Política de Privacidad", url: "https://nexusdigital.tech/legal/privacidad" },
 ];
 
-export const digitalAssetsBreadcrumb: BreadcrumbItem[] = [
+export const terminosBreadcrumb: BreadcrumbItem[] = [
   { name: "Inicio", url: "https://nexusdigital.tech" },
-  {
-    name: "Digital Assets",
-    url: "https://nexusdigital.tech/digital-assets/paw-art-studio",
-  },
+  { name: "Términos de Servicio", url: "https://nexusdigital.tech/legal/terminos" },
 ];

@@ -1,75 +1,109 @@
-import Image from "next/image";
-
-const pillars = [
+const services = [
   {
-    number: "01",
-    tag: "engineering",
-    title: "High-Performance Dev",
+    icon: "code",
+    badge: "CORE",
+    title: "Desarrollo Web",
     description:
-      "Web/Apps escalables con arquitectura de alto rendimiento. Código optimizado para conversión masiva.",
-    image: "/pillar-1-v2.png",
-    alt: "High performance code and technical architecture",
-    extraClass: "",
+      "Aplicaciones de alto rendimiento construidas con React, Next.js y arquitectura Cloud Native. Obtenemos puntuaciones 99/100 en Core Web Vitals para garantizar velocidad máxima, experiencia de usuario impecable y posicionamiento prioritario en buscadores.",
+    features: ["PWA & Headless CMS", "SSR + Edge Rendering"],
   },
   {
-    number: "02",
-    tag: "visibility",
-    title: "Data-Driven SEO",
+    icon: "query_stats",
+    badge: "GROWTH",
+    title: "SEO Técnico",
     description:
-      "Dominio de buscadores mediante ingeniería de datos. No adivinamos, procesamos para ganar posiciones.",
-    image: "/pillar-2.png",
-    alt: "Data visualization and digital marketing analytics",
-    extraClass: "",
+      "Más que palabras clave: ingeniería de datos aplicada al posicionamiento. Diseñamos arquitecturas semánticas, implementamos marcado Schema avanzado y construimos autoridad algorítmica que los motores de búsqueda priorizan con consistencia.",
+    features: ["Indexing Optimization", "Competitive AI Analysis"],
   },
   {
-    number: "03",
-    tag: "automation",
-    title: "Growth Ecosystems",
+    icon: "settings_input_component",
+    badge: "EFFICIENCY",
+    title: "Automatización",
     description:
-      "Automatización de ventas y ecosistemas blindados que operan 24/7 sin fallos ni cuellos de botella.",
-    image: "/pillar-3.png",
-    alt: "Global network connectivity and automation",
-    extraClass: "",
+      "Conectamos tu CRM, ERP y herramientas de marketing en un ecosistema digital fluido. Eliminamos tareas repetitivas, aceleramos los ciclos de venta y liberamos a tu equipo para enfocarse en lo que realmente genera ingresos.",
+    features: ["Zapier / Make Expert", "Custom API Bridges"],
   },
 ];
 
 export default function Pillars() {
   return (
-    <section className="py-24 px-6 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-black uppercase mb-4 tracking-tighter">
-            Nuestros 3 Pilares de Crecimiento
+    <section
+      id="servicios"
+      className="py-20 px-6 md:px-12"
+      style={{ backgroundColor: "#081425" }}
+    >
+      <div className="max-w-7xl mx-auto space-y-16">
+        {/* Header */}
+        <div className="text-center max-w-2xl mx-auto">
+          <h2
+            className="font-bold text-[#d8e3fb] mb-3"
+            style={{ fontSize: "48px", lineHeight: "1.2", letterSpacing: "-0.01em", fontWeight: 700 }}
+          >
+            Soluciones de Ingeniería
           </h2>
-          <div className="h-1 w-24 bg-primary mx-auto"></div>
+          <p className="text-[#c4c6cd] text-[16px] leading-relaxed">
+            Arquitectura digital diseñada para escalar sin fricciones.
+          </p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          {pillars.map((pillar) => (
+
+        {/* Cards grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          {services.map((s) => (
             <div
-              key={pillar.number}
-              className={`flex flex-col gap-6 ${pillar.extraClass}`}
+              key={s.title}
+              className="glass-card p-8 rounded-xl group transition-all duration-300 hover:bg-white/[0.04]"
             >
-              <div className="aspect-video rounded-xl overflow-hidden border border-border-dim bg-surface group relative">
-                <Image
-                  className="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700"
-                  src={pillar.image}
-                  alt={pillar.alt}
-                  width={600}
-                  height={338}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-surface to-transparent"></div>
+              {/* Icon + badge row */}
+              <div className="flex justify-between items-start mb-6">
+                <span
+                  className="material-symbols-outlined"
+                  style={{ fontSize: "36px", color: "#b3c5ff" }}
+                >
+                  {s.icon}
+                </span>
+                <span
+                  className="font-mono text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded-full"
+                  style={{
+                    background: "rgba(2, 102, 255, 0.12)",
+                    color: "#b3c5ff",
+                    border: "1px solid rgba(2, 102, 255, 0.25)",
+                  }}
+                >
+                  {s.badge}
+                </span>
               </div>
-              <div>
-                <div className="font-mono text-primary text-xs mb-2 uppercase">
-                  {pillar.number} {"// "}{pillar.tag}
-                </div>
-                <h4 className="text-2xl font-black uppercase mb-3 italic">
-                  {pillar.title}
-                </h4>
-                <p className="text-gray-400 leading-relaxed">
-                  {pillar.description}
-                </p>
-              </div>
+
+              {/* Title */}
+              <h3
+                className="text-[#d8e3fb] font-semibold mb-3"
+                style={{ fontSize: "28px", lineHeight: "1.3" }}
+              >
+                {s.title}
+              </h3>
+
+              {/* Description */}
+              <p className="text-[#c4c6cd] text-[15px] leading-relaxed mb-6">
+                {s.description}
+              </p>
+
+              {/* Features */}
+              <ul className="space-y-2">
+                {s.features.map((f) => (
+                  <li
+                    key={f}
+                    className="flex items-center gap-2 font-mono text-[13px] text-[#d8e3fb]"
+                    style={{ letterSpacing: "0.04em" }}
+                  >
+                    <span
+                      className="material-symbols-outlined"
+                      style={{ fontSize: "16px", color: "#b3c5ff" }}
+                    >
+                      check_circle
+                    </span>
+                    {f}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>

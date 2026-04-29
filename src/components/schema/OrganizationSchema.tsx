@@ -19,20 +19,21 @@ export default function OrganizationSchema() {
         },
         image: { "@id": "https://nexusdigital.tech/#logo" },
         description:
-          "Agencia de ingeniería digital especializada en SEO técnico, desarrollo web de alto rendimiento y ecosistemas de crecimiento digital para empresas en España, Ecuador y Colombia.",
+          "Agencia de ingeniería digital especializada en SEO técnico, desarrollo web de alto rendimiento y ecosistemas de crecimiento digital para empresas en Ecuador y Colombia.",
         slogan: "Growth Engineering",
         foundingDate: "2024",
         areaServed: [
-          { "@type": "Country", name: "Spain" },
           { "@type": "Country", name: "Ecuador" },
           { "@type": "Country", name: "Colombia" },
         ],
+        email: "hola@nexusdigital.tech",
         contactPoint: [
           {
             "@type": "ContactPoint",
             contactType: "customer service",
             availableLanguage: ["Spanish"],
-            url: "https://wa.me/593987098437",
+            url: "https://wa.me/593979097543",
+            email: "hola@nexusdigital.tech",
           },
         ],
         sameAs: ["https://github.com/edt092"],
@@ -52,7 +53,7 @@ export default function OrganizationSchema() {
         url: "https://nexusdigital.tech",
         name: "NexusDigital | Growth Engineering",
         description:
-          "Somos tu brazo tecnológico en España, Ecuador y Colombia. Construimos ecosistemas digitales de alto rendimiento diseñados para escalar tus ventas.",
+          "Somos tu brazo tecnológico en Ecuador y Colombia. Construimos ecosistemas digitales de alto rendimiento diseñados para escalar tus ventas.",
         inLanguage: "es",
         publisher: {
           "@id": "https://nexusdigital.tech/#organization",
@@ -64,7 +65,7 @@ export default function OrganizationSchema() {
         url: "https://nexusdigital.tech",
         name: "NexusDigital | Growth Engineering",
         description:
-          "Somos tu brazo tecnológico en España, Ecuador y Colombia. Construimos ecosistemas digitales de alto rendimiento diseñados para escalar tus ventas.",
+          "Somos tu brazo tecnológico en Ecuador y Colombia. Construimos ecosistemas digitales de alto rendimiento diseñados para escalar tus ventas.",
         inLanguage: "es",
         isPartOf: {
           "@id": "https://nexusdigital.tech/#website",
@@ -76,7 +77,14 @@ export default function OrganizationSchema() {
           "@id": "https://nexusdigital.tech/#breadcrumb",
         },
         datePublished: "2024-01-01",
-        dateModified: "2026-04-28",
+        dateModified: "2026-04-29",
+        primaryImageOfPage: {
+          "@type": "ImageObject",
+          url: "https://nexusdigital.tech/logo.png",
+          width: 512,
+          height: 512,
+          caption: "NexusDigital — Agencia SEO y Desarrollo Web, Ecuador y Colombia",
+        },
       },
     ],
   };

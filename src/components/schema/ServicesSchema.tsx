@@ -9,12 +9,11 @@ export default function ServicesSchema() {
         alternateName: "Data-Driven SEO",
         description:
           "Posicionamiento en buscadores mediante ingeniería de datos: auditorías técnicas, optimización de Core Web Vitals, arquitectura de contenido, investigación de keywords con intención comercial y estrategia de enlazado para dominar resultados de búsqueda en España, Ecuador y Colombia.",
-        url: "https://nexusdigital.tech/#soluciones",
+        url: "https://nexusdigital.tech/#servicios",
         provider: {
           "@id": "https://nexusdigital.tech/#organization",
         },
         areaServed: [
-          { "@type": "Country", name: "Spain" },
           { "@type": "Country", name: "Ecuador" },
           { "@type": "Country", name: "Colombia" },
         ],
@@ -61,12 +60,11 @@ export default function ServicesSchema() {
         alternateName: "High-Performance Dev",
         description:
           "Desarrollo de sitios web y aplicaciones escalables con arquitectura de alto rendimiento usando Next.js. Código optimizado para conversión, tiempos de carga inferiores a 1 segundo y disponibilidad garantizada del 99.8%.",
-        url: "https://nexusdigital.tech/#soluciones",
+        url: "https://nexusdigital.tech/#servicios",
         provider: {
           "@id": "https://nexusdigital.tech/#organization",
         },
         areaServed: [
-          { "@type": "Country", name: "Spain" },
           { "@type": "Country", name: "Ecuador" },
           { "@type": "Country", name: "Colombia" },
         ],
@@ -104,12 +102,11 @@ export default function ServicesSchema() {
         alternateName: "Growth Ecosystems",
         description:
           "Automatización de procesos de ventas y marketing digital. Ecosistemas digitales que operan 24/7 sin cuellos de botella, combinando tecnología, datos y estrategia para escalar ingresos de forma sostenida.",
-        url: "https://nexusdigital.tech/#soluciones",
+        url: "https://nexusdigital.tech/#servicios",
         provider: {
           "@id": "https://nexusdigital.tech/#organization",
         },
         areaServed: [
-          { "@type": "Country", name: "Spain" },
           { "@type": "Country", name: "Ecuador" },
           { "@type": "Country", name: "Colombia" },
         ],

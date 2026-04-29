@@ -1,50 +1,83 @@
 export default function Hero() {
   return (
-    <section className="relative pt-40 pb-24 px-6 overflow-hidden">
-      <div className="max-w-5xl mx-auto relative z-10">
-        <div className="font-mono text-primary text-sm mb-4 tracking-[0.2em] flex items-center gap-2">
-          <span className="size-2 rounded-full bg-primary animate-pulse"></span>
-          SYSTEM_STATUS: OPTIMIZING_REVENUE
-        </div>
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.9] tracking-tighter mb-8 uppercase">
-          EL CÓDIGO QUE NO GENERA INGRESOS ES{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">
-            CÓDIGO MUERTO
+    <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 overflow-hidden pt-16">
+      {/* Background ambient blobs */}
+      <div
+        className="absolute top-1/4 left-1/4 w-[500px] h-[500px] rounded-full pointer-events-none opacity-15"
+        style={{
+          background: "radial-gradient(circle, #0266ff 0%, transparent 70%)",
+          filter: "blur(80px)",
+          animation: "float-blob 12s ease-in-out infinite",
+        }}
+      />
+      <div
+        className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full pointer-events-none opacity-10"
+        style={{
+          background: "radial-gradient(circle, #ffb95f 0%, transparent 70%)",
+          filter: "blur(100px)",
+          animation: "float-blob 16s ease-in-out infinite reverse",
+        }}
+      />
+
+      {/* Content */}
+      <div className="relative z-10 max-w-5xl mx-auto space-y-8">
+        {/* Headline */}
+        <h1
+          className="font-bold text-[#d8e3fb] tracking-tight"
+          style={{
+            fontSize: "clamp(2.8rem, 7vw, 4.5rem)",
+            lineHeight: 1.1,
+            fontWeight: 800,
+            letterSpacing: "-0.02em",
+          }}
+        >
+          Convertimos tu web en un{" "}
+          <span className="italic" style={{ color: "#ffb95f" }}>
+            motor de crecimiento
           </span>
+          .
         </h1>
-        <p className="text-xl text-gray-400 leading-relaxed mb-10 border-l-2 border-primary/30 pl-6">
-          Somos tu aliado tecnológico para impulsar el crecimiento de tu negocio.
-          <br />
-          Diseñamos ecosistemas digitales sólidos, eficientes y preparados para escalar.
-          <br />
-          Convertimos estrategia y tecnología en resultados medibles.
+
+        {/* Sub-headline */}
+        <p
+          className="text-[#c4c6cd] leading-relaxed max-w-2xl mx-auto"
+          style={{ fontSize: "18px", lineHeight: "1.6" }}
+        >
+          Consultoría de ingeniería digital de alto rendimiento. Optimizamos
+          infraestructuras, SEO y automatización para empresas que no se
+          conforman con lo estándar.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4">
+
+        {/* CTAs */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-4">
           <a
-            href="https://wa.me/593987098437?text=Hola%20Solicito%20una%20auditor%C3%ADa%20gratuita%2C%20me%20pueden%20ayudar%3F"
+            href="https://wa.me/593979097543?text=Hola%2C%20somos%20tus%20especialistas%20en%20SEO%20de%20que%20pa%C3%ADs%20nos%20visitas%20y%20como%20podemos%20ayudarte%3F"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-primary text-white px-8 py-4 rounded-lg font-black tracking-wide text-lg hover:scale-[1.02] transition-transform flex items-center justify-center gap-3"
+            className="bg-amber-500 text-slate-950 font-semibold text-[14px] tracking-wide px-10 py-4 rounded hover:bg-amber-400 transition-all glow-amber"
           >
-            AUDITORÍA DE CRECIMIENTO GRATUITA
-            <span className="material-symbols-outlined">analytics</span>
+            Solicitar Auditoría Gratuita
           </a>
-          <button className="bg-surface border border-border-dim text-gray-300 px-8 py-4 rounded-lg font-bold hover:bg-white/5 transition-colors flex items-center justify-center gap-3">
-            VER MANIFIESTO
-          </button>
+          <a
+            href="#metricas"
+            className="border font-semibold text-[14px] tracking-wide px-10 py-4 rounded transition-all hover:bg-[#0266ff] hover:text-white"
+            style={{
+              borderColor: "#0266ff",
+              color: "#b3c5ff",
+            }}
+          >
+            Ver Resultados
+          </a>
         </div>
       </div>
-      {/* Decoration element */}
-      <div className="absolute -right-20 top-40 opacity-10 pointer-events-none hidden lg:block">
-        <pre className="font-mono text-[10px] text-primary leading-none">
-          {`01010101 01010101
-11100011 11100011
-00011100 00011100
-GROWTH_V2_INIT...
-CORE_ENGINE_ACTIVE
-REVENUE_SCALE: MAX`}
-        </pre>
-      </div>
+
+      {/* Bottom fade */}
+      <div
+        className="absolute bottom-0 left-0 w-full h-32 pointer-events-none"
+        style={{
+          background: "linear-gradient(to top, #081425, transparent)",
+        }}
+      />
     </section>
   );
 }

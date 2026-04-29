@@ -14,7 +14,9 @@
       "Bash(cp \"E:/coding/proyectos-personales/activos/portfolio-edwin-bayona/assets/gif-promogimmicks.gif\" \"E:/coding/proyectos-personales/activos/nexus-digital/public/\")",
       "Bash(cp \"E:/coding/proyectos-personales/activos/portfolio-edwin-bayona/assets/gif-ksp.gif\" \"E:/coding/proyectos-personales/activos/nexus-digital/public/\")",
       "Bash(cp \"E:/coding/proyectos-personales/activos/portfolio-edwin-bayona/assets/gif-elfogon.gif\" \"E:/coding/proyectos-personales/activos/nexus-digital/public/\")",
-      "Bash(cp \"E:/coding/proyectos-personales/activos/portfolio-edwin-bayona/assets/gif-parasoles.gif\" \"E:/coding/proyectos-personales/activos/nexus-digital/public/\")"
+      "Bash(cp \"E:/coding/proyectos-personales/activos/portfolio-edwin-bayona/assets/gif-parasoles.gif\" \"E:/coding/proyectos-personales/activos/nexus-digital/public/\")",
+      "Read(//c/Users/Dagon/Downloads/nexus-digital-new-desing/**)",
+      "Bash(npx next *)"
     ]
   }
 }

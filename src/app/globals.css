@@ -1,37 +1,72 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #0072f5;
+  /* ── Nexus Kinetic — color system ── */
+  --color-primary: #0266ff;
+  --color-surface: #081425;
+  --color-surface-low: #111c2d;
+  --color-surface-lowest: #040e1f;
+  --color-surface-high: #1f2a3c;
+  --color-surface-highest: #2a3548;
+  --color-on-surface: #d8e3fb;
+  --color-on-surface-muted: #c4c6cd;
+  --color-secondary: #b3c5ff;
+  --color-accent: #ffb95f;
+  --color-border-dim: #44474c;
+
+  /* legacy aliases — used by /casos and /digital-assets pages */
+  --color-background-dark: #081425;
   --color-background-light: #f5f7f8;
-  --color-background-dark: #050608;
-  --color-surface: #111418;
-  --color-border-dim: #232931;
 
   --font-display: "Inter", sans-serif;
   --font-mono: "Roboto Mono", monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #050608;
-  background-image: linear-gradient(
-      rgba(0, 114, 245, 0.03) 1px,
-      transparent 1px
-    ),
-    linear-gradient(90deg, rgba(0, 114, 245, 0.03) 1px, transparent 1px);
-  background-size: 40px 40px;
+  background-color: #081425;
+  color: #d8e3fb;
+  overflow-x: hidden;
 }
 
+/* ── Navigation ── */
 .glass-nav {
-  background: rgba(5, 6, 8, 0.8);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid #232931;
+  background: rgba(4, 14, 31, 0.75);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 30px rgba(2, 102, 255, 0.06);
 }
 
+/* ── Glass surface used for cards and containers ── */
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  border-left: 1px solid rgba(255, 255, 255, 0.04);
+  border-right: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+/* ── Interactive glow states ── */
+.glow-blue {
+  box-shadow: 0 0 20px rgba(2, 102, 255, 0.35);
+}
+.glow-amber {
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+}
+
+/* ── Legacy terminal header (Manifesto) ── */
 .terminal-header {
   background: #1a1f26;
-  border-bottom: 1px solid #232931;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+/* ── Animations ── */
 @keyframes nudge {
   0%, 100% { transform: translateX(0); }
   50% { transform: translateX(4px); }
@@ -39,11 +74,22 @@ body {
 
 @keyframes wa-pulse {
   0%, 80%, 100% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4);
     transform: scale(1);
   }
   90% {
-    box-shadow: 0 0 0 12px rgba(37, 211, 102, 0);
+    box-shadow: 0 0 0 12px rgba(16, 185, 129, 0);
     transform: scale(1.05);
   }
+}
+
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes float-blob {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(20px, -15px) scale(1.05); }
+  66% { transform: translate(-10px, 10px) scale(0.97); }
 }

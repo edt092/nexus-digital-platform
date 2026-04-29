@@ -1,69 +1,61 @@
 export default function CTA() {
   return (
-    <section className="py-24 px-6 mb-20">
-      <div className="max-w-7xl mx-auto bg-primary rounded-2xl p-10 md:p-20 relative overflow-hidden group">
-        <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none overflow-hidden">
-          <div className="text-[200px] font-black absolute -bottom-10 -right-10 leading-none select-none tracking-tighter uppercase italic">
-            NEXUS
-          </div>
+    <section
+      className="py-20 px-6 md:px-12"
+      style={{ backgroundColor: "#081425" }}
+    >
+      <div className="max-w-4xl mx-auto text-center glass-card px-10 py-20 rounded-3xl">
+        {/* Label */}
+        <div className="font-mono text-[11px] uppercase tracking-[0.15em] text-[#b3c5ff] mb-6">
+          {"// siguiente_paso"}
         </div>
-        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 className="text-4xl md:text-6xl font-black uppercase text-white mb-6 leading-none">
-              Agenda una Consultoría Técnica de 15 min
-            </h2>
-            <p className="text-xl text-white/80 font-mono mb-8 italic">
-              Recibe nuestro Checklist de Salud SEO 2026
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="https://wa.me/593987098437?text=Hola%20Solicito%20una%20auditor%C3%ADa%20gratuita%2C%20me%20pueden%20ayudar%3F"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white text-primary px-10 py-5 rounded font-black text-lg hover:bg-gray-100 transition-all uppercase tracking-tight inline-block"
-              >
-                RESERVAR SLOT AHORA
-              </a>
-            </div>
-          </div>
-          <div className="hidden lg:block">
-            <div className="bg-background-dark/30 backdrop-blur p-8 rounded-xl border border-white/20">
-              <div className="flex items-center gap-4 mb-6">
-                <span className="material-symbols-outlined text-4xl">
-                  checklist
-                </span>
-                <span className="font-bold text-xl uppercase italic">
-                  SEO Health Checklist v2.0
-                </span>
-              </div>
-              <ul className="space-y-4 font-mono text-sm">
-                <li className="flex items-center gap-3">
-                  <span className="text-green-400 material-symbols-outlined">
-                    check_circle
-                  </span>{" "}
-                  Core Web Vitals Audit
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="text-green-400 material-symbols-outlined">
-                    check_circle
-                  </span>{" "}
-                  Semantic Architecture Review
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="text-green-400 material-symbols-outlined">
-                    check_circle
-                  </span>{" "}
-                  Conversion Funnel Debugging
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="text-green-400 material-symbols-outlined">
-                    check_circle
-                  </span>{" "}
-                  Tech Debt Assessment
-                </li>
-              </ul>
-            </div>
-          </div>
+
+        {/* Heading */}
+        <h2
+          className="font-bold text-[#d8e3fb] mb-6 tracking-tight"
+          style={{
+            fontSize: "clamp(2rem, 5vw, 3.5rem)",
+            lineHeight: "1.15",
+            fontWeight: 800,
+            letterSpacing: "-0.02em",
+          }}
+        >
+          ¿Listo para crecer con datos,{" "}
+          <span className="italic" style={{ color: "#ffb95f" }}>
+            no con humo
+          </span>
+          ?
+        </h2>
+
+        {/* Sub-text */}
+        <p
+          className="text-[#c4c6cd] leading-relaxed mb-12 max-w-2xl mx-auto"
+          style={{ fontSize: "18px", lineHeight: "1.6" }}
+        >
+          Nuestra agenda se llena rápido. Asegura tu lugar para el próximo
+          trimestre y transforma tu presencia digital hoy.
+        </p>
+
+        {/* WhatsApp CTA */}
+        <a
+          href="https://wa.me/593979097543?text=Hola%2C%20somos%20tus%20especialistas%20en%20SEO%20de%20que%20pa%C3%ADs%20nos%20visitas%20y%20como%20podemos%20ayudarte%3F"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-3 bg-emerald-600 text-white font-semibold text-[15px] px-10 py-4 rounded-full hover:bg-emerald-500 transition-all hover:scale-105 active:scale-95"
+        >
+          <svg viewBox="0 0 32 32" fill="currentColor" className="w-5 h-5" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.004 2.667c-7.364 0-13.337 5.973-13.337 13.333 0 2.347.613 4.64 1.78 6.667L2.667 29.333l6.84-1.793A13.28 13.28 0 0 0 16.004 29.333c7.36 0 13.333-5.973 13.333-13.333S23.364 2.667 16.004 2.667Zm0 24.4a11.04 11.04 0 0 1-5.627-1.54l-.404-.24-4.186 1.098 1.116-4.08-.263-.42A11.01 11.01 0 0 1 4.933 16c0-6.1 4.967-11.067 11.07-11.067 6.1 0 11.064 4.967 11.064 11.067 0 6.103-4.964 11.067-11.063 11.067Zm6.07-8.287c-.334-.167-1.97-.973-2.276-1.083-.306-.114-.529-.167-.752.167-.222.333-.862 1.083-1.057 1.306-.195.222-.39.25-.723.083-.334-.167-1.41-.52-2.685-1.656-.992-.884-1.662-1.977-1.857-2.31-.195-.334-.02-.514.147-.68.15-.15.334-.39.5-.584.167-.195.223-.334.334-.556.112-.222.056-.417-.028-.584-.083-.167-.751-1.812-1.03-2.48-.27-.65-.546-.562-.751-.573l-.64-.01c-.222 0-.584.083-.89.417-.306.333-1.168 1.14-1.168 2.78 0 1.64 1.196 3.226 1.362 3.448.167.222 2.353 3.593 5.703 5.04.797.344 1.418.55 1.903.703.799.254 1.527.218 2.102.132.641-.096 1.971-.806 2.249-1.584.278-.778.278-1.445.195-1.584-.084-.14-.306-.222-.64-.39Z" />
+          </svg>
+          Hablemos por WhatsApp
+        </a>
+
+        {/* Trust badge */}
+        <div className="mt-10 flex items-center justify-center gap-2 font-mono text-[11px] text-[#8e9197] uppercase tracking-widest">
+          <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75" />
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-600" />
+          </span>
+          Datos verificados con Google Search Console · Sin compromisos
         </div>
       </div>
     </section>
